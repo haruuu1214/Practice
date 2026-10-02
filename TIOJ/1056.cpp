@@ -4,11 +4,6 @@
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 #define FOR(p, a, b) for(int p = a; p <= b; p++)
 using namespace std;
-#define dout(a...) cerr << "[" << #a << "] : ", dbg(a)
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) { cout << a << (sizeof...(b) ? ", " : " "); dbg(b...); }
-void ent() { cerr << "\n"; }
 
 char a[3][3];
 

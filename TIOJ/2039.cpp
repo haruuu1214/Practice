@@ -1,16 +1,10 @@
 #pragma GCC optimize("O3,unroll-loops")
 #pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
 #include <bits/stdc++.h>
-// #define int long long
 #define pii pair<int,int>
 #define IO ios::sync_with_stdio(0); cin.tie(0)
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-void ent() {cout << "\n";}
 const int INF = 2e9;
-/// ------- Initialization End -------
 
 pii operator+(const pii p1, const pii p2) {
     return {p1.first + p2.first, p1.second + p2.second};

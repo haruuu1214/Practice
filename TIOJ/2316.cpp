@@ -1,22 +1,13 @@
-// #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
-// #define int long long
 #define ll long long
 #define pii pair<int,int>
 #define pll pair<ll,ll>
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-void ent() {cout << "\n";}
 
 const int mod = 998244353;
-// const int mod = 1e9 + 7;
 const int INF = 2e9;
-// const int INF = 1e18;
 
-/// ------- Initialization End -------
 
 int mul(int x, int y) {
     if (1ll * x * y >= 1ll * mod)
@@ -93,30 +84,21 @@ signed main() {
         x = qry.first.first;
         y = qry.first.second;
         int res = 0;
-        // dbg(":", x, y); ent();
         if (m[x] <= m[y]) {
             for (int i = 0; i < m[x]; i++) {
                 int id = upper_bound(a[y].begin(), a[y].end(), a[x][i] - 1) - a[y].begin() - 1;
-                // dbg(i, id);
                 if (id >= 0) {
                     res = add(res, mul(pre_a[y][id], inv[x][i]));
-                    // dbg(mul(pre_a[y][id], inv[x][i]));
                 }
-                // ent();
             }
         } else {
             for (int i = 0; i < m[y]; i++) {
                 int id = upper_bound(a[x].begin(), a[x].end(), a[y][i]) - a[x].begin() - 1;
-                // dbg(i, id);
-
                 if (id < 0) {
                     res = add(res, mul(pre_inv[x][pre_inv[x].size() - 1], a[y][i]));
-                    // dbg(mul(pre_inv[x][pre_inv[x].size() - 1], a[y][i])), ent();
                 } else {
-                    // dbg(sub(pre_inv[x][pre_inv[x].size() - 1], pre_inv[x][id]));
                     int tmp = mul(sub(pre_inv[x][pre_inv[x].size() - 1], pre_inv[x][id]), a[y][i]);
                     res = add(res, tmp);
-                    // dbg(tmp), ent();
                 }
             }
         }

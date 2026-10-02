@@ -1,21 +1,10 @@
 #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
-// #define int long long
 #define ll long long
 #define pii pair<int,int>
 #define pll pair<ll,ll>
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
-// void dbg() {;}
-// template<class T, class ...U>
-// void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-// void ent() {cout << "\n";}
-
-// const int INF = 2e9;
-// const int INF = 1e18;
-
-/// ------- Initialization End -------
-
 const int N = 3000005;
 
 const int p = 1e6 + 3;
@@ -87,9 +76,6 @@ void solve() {
             starid++;
         if (starid < n) {
             int len = star[starid] - star[starid - 1] - 1;
-            // dbg(star[starid - 1] + 1, star[starid] - 1, ':', i, i + len - 1);
-            // dbg(query_a(star[starid - 1] + 1, star[starid] - 1) == query_b(i, i + len - 1));
-            // ent();
             if (i + len - 1 < b_len && query_a(star[starid - 1] + 1, star[starid] - 1) == query_b(i, i + len - 1)) {
                 starid++;
                 i += len - 1;
@@ -99,9 +85,7 @@ void solve() {
             }
         } else {
             int len = a_len - star[starid - 1] - 1;
-            // dbg(star[starid - 1] + 1, (int)a.size() - 1, ':', i, i + len - 1); ent();
             if (i + len - 1 == b_len - 1 && query_a(star[starid - 1] + 1, a_len - 1) == query_b(i, i + len - 1)) {
-                // dbg(star[starid - 1] + 1, (int)a.size() - 1, ':', i, i + len - 1); ent();
                 break;
             } else if (star[starid - 1] == -1 || i + len - 1 >= b_len - 1) {
                 cout << "No\n";

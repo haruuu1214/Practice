@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-/// ------- Initialization End -------
 
 signed main()
 {

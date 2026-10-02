@@ -9,13 +9,8 @@
 #define all(x) x.begin(), x.end()
 #define siz(x) (int)x.size()
 using namespace std;
-void dout() {;}
-template<class T, class ...U>
-void dout(T a, U ...b) {cout << a << (sizeof...(b) ? ", " : "\n"); dout(b...);}
-void entr() {cout << "\n";}
 
 const int mod = 998244353; // 1e9 + 7;
-/// ------- Initialization End -------
 
 const int N = 200005;
 int a[N];

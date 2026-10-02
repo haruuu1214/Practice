@@ -8,14 +8,9 @@
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
 #define STL(x) for(auto &HEHE:x) cout << HEHE << " "; cout << "\n";
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-void ent() {cout << "\n";}
 
 const int mod = 1e9 + 7;
 const int INF = 1e18;
-/// ------- Initialization End -------
 
 /// dp[i][j][k] 為 前 i 個人 有 j 個為匹配 且 penalty = k 的情況
 int a[105];

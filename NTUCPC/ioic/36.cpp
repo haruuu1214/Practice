@@ -6,7 +6,6 @@
 #define FOR(i, a, b) for (int i = a; i <= b; i++)
 #define all(x) x.begin(), x.end()
 using namespace std;
-/// ------- Initialization End -------
 const int N = 200005;
 
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());

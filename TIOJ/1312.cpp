@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int,int>
@@ -12,13 +11,7 @@
 #define arr0(x,y) loop(HEHE,0,y-1) cout << x[HEHE] << " "; cout << "\n";
 #define arr1(x,y) loop(HEHE,1,y) cout << x[HEHE] << " "; cout << "\n";
 using namespace std;
-void dbg() {;}
 template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-void endline() {cout << "\n";}
-ostream& operator <<(ostream& os, const pii& a) { os << "[" << a.F << ", " << a.S << "]"; return os; }
-ostream& operator <<(ostream& os, const pair<int, pii>& a) { os << a.F << " : [" << a.S.F << ", " << a.S.S << "]"; return os; }
-/// ------- Initialization End -------
 
 
 struct DSU

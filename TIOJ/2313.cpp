@@ -5,13 +5,8 @@
 #define pii pair<int,int>
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-void ent() {cout << "\n";}
 
 const ll INF = 1e18;
-/// ------- Initialization End -------
 
 const int N = 50005;
 const int MXN = 32000; /// (int)sqrt(1e9) + 1

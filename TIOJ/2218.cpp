@@ -6,9 +6,6 @@
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
 #define loop(i,a,b) for(int i=a;i<=b;i++)
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
 void space() {cout << "\n";}
 
 int a[505];
@@ -49,17 +46,6 @@ signed main()
             }
         }
     }
-/*
-    loop(i, 1, n) {
-        loop(j, 1, n) {
-            if (dp[i][j] == -1e18)
-                dbg("-");
-            else
-                dbg(dp[i][j]);
-        }
-        space();
-    }
-*/
     cout << (dp[1][n] < 0 ? -1 : dp[1][n]) << "\n";
     
     return 0;

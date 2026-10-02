@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast, unroll-loops, O3")
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int, int>
@@ -6,15 +5,9 @@
 #define FOR(i, a, b) for (int i = a; i <= b; i++)
 #define all(x) x.begin(), x.end()
 using namespace std;
-void dout() {;}
-template<class T, class ...U>
-void dout(T a, U ...b) {cout << a << (sizeof...(b) ? ", " : " "); dout(b...);}
-void entr() {cout << "\n";}
 
 const int mod = 998244353;
-// const int mod = 1e9 + 7;
 const int INF = 1e18;
-/// ------- Initialization End -------
 
 const int N = 15;
 int n, k;

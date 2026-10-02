@@ -2,7 +2,6 @@
 #include "lib1044.h"
 #define IO ios::sync_with_stdio(0); cin.tie(0);
 using namespace std;
-/// ------- Initialization End -------
 
 const int N = 100005;
 

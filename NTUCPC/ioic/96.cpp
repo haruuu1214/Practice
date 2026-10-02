@@ -9,13 +9,8 @@
 #define all(x) x.begin(), x.end()
 #define siz(x) (int)x.size()
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << (sizeof...(b) ? ", " : "  "); dbg(b...);}
-void ent() {cout << "\n";}
 
 const int mod = 998244353; // 1e9 + 7;
-/// ------- Initialization End -------
 
 const int N = 1005;
 int a[4][N];

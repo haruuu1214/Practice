@@ -5,12 +5,7 @@
 #define FOR(i, a, b) for (int i = a; i <= b; i++)
 #define all(x) x.begin(), x.end()
 using namespace std;
-void dout() {;}
-template<class T, class ...U>
-void dout(T a, U ...b) {cout << a << (sizeof...(b) ? ", " : " "); dout(b...);}
-void entr() {cout << "\n";}
 
-/// ------- Initialization End -------
 
 const int N = 200005;
 int seg[4 * N], a[N], w[N];

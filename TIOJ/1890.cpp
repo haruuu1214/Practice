@@ -1,21 +1,13 @@
-// #pragma GCC optimize("Ofast, unroll-loops, O3")
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int, int>
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 #define FOR(i, a, b) for (int i = a; i <= b; i++)
 using namespace std;
-#define dout(a...) cout << "[" << #a << "] : ", dbg(a)
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << (sizeof...(b) ? ", " : " "); dbg(b...);}
-void ent() {cout << "\n";}
 
 const int mod = 998244353;
-// const int mod = 1e9 + 7;
 const int INF = 1e18;
 
-/// ------- Initialization End -------
 
 const int N = 500005;
 vector<pii> seg[4 * N];

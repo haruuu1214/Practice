@@ -7,7 +7,6 @@ using namespace std;
 
 const int mod = 1e9 + 7;
 const int INF = 1e18;
-/// ------- Initialization End -------
 
 int opt[5005][5005];
 int dp[5005][5005];

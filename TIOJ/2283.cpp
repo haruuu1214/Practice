@@ -1,19 +1,12 @@
-// #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
-// #define int long long
 #define ll long long
 #define pll pair<ll,ll>
 #define pii pair<int,int>
 #define IO ios::sync_with_stdio(0); cin.tie(0);
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-void ent() {cout << "\n";}
 
 const int mod = 998244353;
 const ll INF = 1e18;
-/// ------- Initialization End -------
 
 const int N = 200005;
 

@@ -1,15 +1,9 @@
-// #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int,int>
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-void enter() {cout << "\n";}
-/// ------- Initialization End -------
 
 const int N = 5005;
 const int INF = 1e12;
@@ -88,8 +82,6 @@ signed main()
             }
         }
     }
-
-    // loop(i, 1, n) dbg(vis[i]); enter();
 
     vector <pii> ans;
     for (edge e : E) {

@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-/// ------- Initialization End -------
 const int N = 105;
 bool mp[N][N], blk[N][N];
 bool dir[2][N][N];
@@ -74,7 +73,6 @@ signed main() {
             if (check(x, y - 1, 0, - 1)) remove(1, x, y - 1, 0, - 1);
             if (check(x, y + 1, 0, + 1)) remove(1, x, y + 1, 0, + 1);
         }
-        // dout(res); entr();
         mx = max(mx, res);
     }
     cout << mx << "\n" << res << "\n";

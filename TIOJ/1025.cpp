@@ -1,11 +1,9 @@
 /// @brief ZJ B053
-// #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int,int>
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
 using namespace std;
-/// ------- Initialization End -------
 
 int N;
 bool chR[10][10], chC[10][10], chS[10][10];

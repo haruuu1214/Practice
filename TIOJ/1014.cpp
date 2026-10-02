@@ -4,7 +4,6 @@
 using namespace std;
 
 const int INF = 1e9;
-/// ------- Initialization End -------
 
 int a[18];
 int dp[18][1 << 18];

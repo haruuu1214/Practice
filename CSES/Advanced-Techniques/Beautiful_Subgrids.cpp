@@ -7,7 +7,6 @@ using namespace std;
 
 const int mod = 1e9 + 7;
 const int INF = 1e18;
-/// ------- Initialization End -------
 
 array <bitset<3005>, 3005> bit;
 

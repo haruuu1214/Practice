@@ -1,15 +1,8 @@
-// #pragma GCC optimize("Ofast, unroll-loops, O3")
 #include <bits/stdc++.h>
-// #define int long long
 #define pii pair<int, int>
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 #define FOR(i, a, b) for (int i = a; i <= b; i++)
 using namespace std;
-void dout() {;}
-template<class T, class ...U>
-void dout(T a, U ...b) {cout << a << (sizeof...(b) ? ", " : " "); dout(b...);}
-void entr() {cout << "\n";}
-/// ------- Initialization End -------
 
 const int N = 50005;
 struct edge {

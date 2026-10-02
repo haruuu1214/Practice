@@ -10,7 +10,6 @@
 using namespace std;
 
 const int mod = 998244353; // 1e9 + 7;
-/// ------- Initialization End -------
 
 signed main() {
     IO;

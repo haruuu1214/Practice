@@ -5,7 +5,6 @@ using namespace std;
 
 const int mod = 1e9 + 7;
 const int INF = 1e18;
-/// ------- Initialization End -------
 
 int a[200005];
 int pre[200005];

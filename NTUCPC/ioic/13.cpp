@@ -5,7 +5,6 @@
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 #define FOR(i, a, b) for (int i = a, I = b; i <= I; i++)
 using namespace std;
-/// ------- Initialization End -------
 
 const int N = 1000005;
 int cnt[N];

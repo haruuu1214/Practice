@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
 using namespace std;

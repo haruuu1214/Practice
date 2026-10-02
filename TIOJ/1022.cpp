@@ -1,14 +1,9 @@
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int, int>
-#define dout(a...) cout << "[" << #a << "] : ", dbg(a)
 #define FOR(p, a, b) for (int p = a; p <= b; p++)
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << (sizeof...(b) ? ", " : " "), dbg(b...);}
-void ent() {cout << "\n";}
 const int INF = 1e18;
 const int N = 105;
 int a[N][N], dis[N][N];

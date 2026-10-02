@@ -2,10 +2,6 @@
 #define int long long
 #define pii pair<int, int>
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) { cout << a << " "; dbg(b...); }
-void ent() { cout << "\n"; }
 
 const int INF = 1e17;
 const int N = 5005;

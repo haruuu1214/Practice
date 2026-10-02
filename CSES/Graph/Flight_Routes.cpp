@@ -2,10 +2,6 @@
 #define int long long
 #define pii pair<int, int>
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) { cout << a << " "; dbg(b...); }
-void ent() { cout << "\n"; }
 
 const int INF = 1e17;
 const int N = 100005;
@@ -36,7 +32,6 @@ signed main() {
         for (auto [u, w] : G[v]) {
             if (vis[u] < k) {
                 Q.push({step + w, u});
-                // dbg(u, vis[u], ":", step + w); ent();
             }
         }
     }

@@ -1,18 +1,12 @@
-// #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int,int>
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
 #define STL(x) for (auto &HEHE : x) cout << HEHE << " "; cout << "\n";
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-void ent() {cout << "\n";}
 
 const int p = 1e6 + 3;
 const int mod = 1e9 + 7; /// 不能超過 3e9 -> 會 overflow
-/// ------- Initialization End -------
 
 int hash(string &s) {
     int res = 0;

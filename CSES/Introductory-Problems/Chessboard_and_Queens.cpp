@@ -1,8 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
 
 const int N = 8;
 int x[N], y[N], dx[2 * N], dy[2 * N];

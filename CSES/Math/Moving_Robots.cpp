@@ -2,7 +2,6 @@
 #define int long long
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
 using namespace std;
-/// ------- Initialization End -------
 
 int mvx[4] = {1, -1, 0, 0};
 int mvy[4] = {0, 0, 1, -1};
@@ -65,13 +64,5 @@ signed main()
         }
     }
     cout << fixed << setprecision(6) << res << "\n";
-
-/*
-    loop(i, 0, 7) {
-        loop(j, 0, 7)
-            dbg(ans[i][j]);
-        enter();
-    }
-*/
     return 0;
 }

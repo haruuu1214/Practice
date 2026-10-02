@@ -9,14 +9,9 @@
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
 #define STL(x) for(auto &HEHE:x) cout << HEHE << " "; cout << "\n";
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-void ent() {cout << "\n";}
 
 const int mod = 1e9 + 7;
 const int INF = 1e18;
-/// ------- Initialization End -------
 
 array <bitset<35>, 20005> bit;
 

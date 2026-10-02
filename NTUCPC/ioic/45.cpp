@@ -1,19 +1,13 @@
-// #pragma GCC optimize("Ofast, unroll-loops, O3")
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int, int>
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 #define FOR(i, a, b) for (int i = a; i <= b; i++)
 using namespace std;
-void dout() {;}
-template<class T, class ...U>
-void dout(T a, U ...b) {cout << a << (sizeof...(b) ? ", " : " "); dout(b...);}
-void entr() {cout << "\n";}
 
 const int mod = 1e9 + 7;
 const int INF = 1e18;
 
-/// ------- Initialization End -------
 
 const int N = 500005;
 vector<pii> G[N], rev_G[N];
@@ -131,9 +125,6 @@ signed main() {
         }
     }
 
-    // FOR (i, 1, n) dout(dis2[i]); entr();
-    // FOR (i, 1, n) dout(cnt2[i]); entr();
-
     fill(seg, seg + 4 * N, make_pair(-INF, 0));
     for (auto [v, u, w] : E) {
         if (dis1[v] >= 0 && dis2[u] >= 0) {
@@ -141,7 +132,6 @@ signed main() {
             int d = dis1[v] + dis2[u] + w, cnt = cnt1[v] * cnt2[u] % mod;
             if (l + 1 <= r - 1) {
                 update(1, 1, n, l + 1, r - 1, {d, cnt});
-                // dout(l + 1, r - 1, d, cnt); entr();
             }
         }
     }

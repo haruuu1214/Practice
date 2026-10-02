@@ -8,14 +8,9 @@
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
 #define STL(x) for(auto &HEHE:x) cout << HEHE << " "; cout << "\n";
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) {cout << a << " "; dbg(b...);}
-void ent() {cout << "\n";}
  
 const int mod = 1e9 + 7;
 const int INF = 1e18;
-/// ------- Initialization End -------
  
 int ten[9] = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000};
 bitset <987654321> vis;

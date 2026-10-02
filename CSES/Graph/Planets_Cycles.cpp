@@ -2,10 +2,6 @@
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 #define pii pair<int, int>
 using namespace std;
-void dbg() {;}
-template<class T, class ...U>
-void dbg(T a, U ...b) { cout << a << " "; dbg(b...); }
-void ent() { cout << "\n"; }
 
 const int N = 200005;
 vector<map<int, int>> cyc;

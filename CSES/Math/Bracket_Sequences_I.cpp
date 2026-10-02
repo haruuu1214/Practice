@@ -7,7 +7,6 @@
 #define int long long
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
 using namespace std;
-/// ------- Initialization End -------
 
 const int mod = 1e9 + 7;
 int invfac[1000005], fac[1000005];

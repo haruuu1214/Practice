@@ -7,11 +7,8 @@
 using namespace std;
 
 const int mod = 998244353;
-// const int mod = 1e9 + 7;
-// const int INF = 2e9;
 const int INF = 1e18;
 
-/// ------- Initialization End -------
 
 const int N = 85;
 int dp[N][N][N][N];

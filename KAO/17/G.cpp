@@ -3,7 +3,6 @@
 #define pii pair<int,int>
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
-/// ------- Initialization End -------
 
 vector <int> f, sz;
 void init(int n) {

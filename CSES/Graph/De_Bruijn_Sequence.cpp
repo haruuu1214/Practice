@@ -1,9 +1,7 @@
-// #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
 #define int long long
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
-/// ------- Initialization End -------
 
 vector<int> G[1 << 15];
 vector<int> ans;

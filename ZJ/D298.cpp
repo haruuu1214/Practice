@@ -5,7 +5,6 @@
 using namespace std;
 const int mod = 1e9 + 7;
 const int INF = 1e18;
-/// ------- Initialization End -------
 
 const int N = 9, M = 10;
 int mat[N][M];

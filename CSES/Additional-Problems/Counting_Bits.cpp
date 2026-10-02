@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int, int>
@@ -6,7 +5,6 @@
 using namespace std;
 const int mod = 1e9 + 7;
 const int INF = 1e18;
-/// ------- Initialization End -------
 
 signed main() {
     IO;

@@ -1,6 +1,3 @@
-/**
- https://www.youtube.com/watch?v=MxhA0bY31wM
- **/
 #include <bits/stdc++.h>
 #define int long long
 using namespace std;

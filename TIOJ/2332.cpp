@@ -3,7 +3,6 @@
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 const int INF = 1e17;
-/// ------- Initialization End -------
 
 const int N = 100005;
 vector<int> G[N];

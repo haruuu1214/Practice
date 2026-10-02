@@ -1,4 +1,3 @@
-// #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int,int>
@@ -9,7 +8,6 @@
 #define ALL(x) (x).begin(),(x).end()
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
 using namespace std;
-/// ------- Initialization End -------
 
 struct DSU
 {
