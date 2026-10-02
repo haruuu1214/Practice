@@ -4,8 +4,6 @@
 #define F first
 #define S second
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define SZ(x) (int)(x).size()
-#define ALL(x) (x).begin(),(x).end()
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
 using namespace std;
 

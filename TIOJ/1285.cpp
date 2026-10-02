@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int,int>
-#define pll pair<ll,ll>
 #define IO ios::sync_with_stdio(0), cin.tie(0)
 #define FOR(i, a, b) for (int i = a, I = b; i <= b; i++)
 using namespace std;

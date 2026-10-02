@@ -4,8 +4,7 @@
 #define F first
 #define S second
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define SZ(x) (int)(x).size()
-#define ALL(x) (x).begin(),(x).end()
+#define sz(x) (int)(x).size()
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
 using namespace std;
 
@@ -71,7 +70,7 @@ signed main()
     }
 
     vector <bool> ans;
-    for (int i = SZ(qrys) - 1; i >= 0; i--) {
+    for (int i = sz(qrys) - 1; i >= 0; i--) {
         if (qrys[i].F == 1) {
             dsu.merge(qrys[i].S.F, qrys[i].S.S);
         } else {
