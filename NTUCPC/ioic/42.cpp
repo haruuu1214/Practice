@@ -1,14 +1,6 @@
 #pragma GCC optimize("Ofast, unroll-loops, O3")
 #include <cstdio>
 #include <cmath>
-// #include <random>
-// #include <chrono>
-// ---------------------------------------------------
-
-// std::mt19937 rng(48763);
-// int rnd(int l, int r) {
-//     return std::uniform_int_distribution<int>(l, r)(rng);
-// }
 const int N = 105;
 int a[N], b[N];
 

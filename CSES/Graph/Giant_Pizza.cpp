@@ -5,7 +5,6 @@
 #define SZ(x) (int)(x).size()
 #define ALL(x) (x).begin(),(x).end()
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
-#define STL(x) for(auto &HEHE:x) cout << HEHE << " "; cout << "\n";
 using namespace std;
 
 vector <int> G[200005], rev_G[200005], topo_G[200005];

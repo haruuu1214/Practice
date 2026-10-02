@@ -7,7 +7,6 @@
 #define SZ(x) (int)(x).size()
 #define ALL(x) (x).begin(),(x).end()
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
-#define STL(x) for(auto &HEHE:x) cout << HEHE << " "; cout << "\n";
 using namespace std;
 
 const int mod = 1e9 + 7;

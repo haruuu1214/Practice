@@ -72,7 +72,6 @@ struct Segment_tree
     void update(int l, int r, int _start, int _d) { update(1, 1, N, l, r, _start, _d); }
     int query(int l, int r) { return query(1, 1, N, l, r); }
 };
-// #undef int
 
 signed main()
 {

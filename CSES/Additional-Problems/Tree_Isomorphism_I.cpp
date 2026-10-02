@@ -2,7 +2,6 @@
 #define int long long
 #define pii pair<int,int>
 #define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define STL(x) for (auto &HEHE : x) cout << HEHE << " "; cout << "\n";
 using namespace std;
 
 const int P = 1e6 + 3;

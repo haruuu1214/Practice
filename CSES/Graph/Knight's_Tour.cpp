@@ -5,7 +5,6 @@
 #define SZ(x) (int)(x).size()
 #define ALL(x) (x).begin(),(x).end()
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
-#define STL(x) for(auto &HEHE:x) cout << HEHE << " "; cout << "\n";
 using namespace std;
 
 int mvx[8] = {2, 2, 1, 1, -1, -1, -2, -2};

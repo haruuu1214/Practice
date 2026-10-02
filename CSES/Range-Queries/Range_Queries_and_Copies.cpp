@@ -7,7 +7,6 @@
 #define SZ(x) (int)(x).size()
 #define ALL(x) (x).begin(),(x).end()
 #define loop(i,a,b) for(int i=(a);i<=(b);i++)
-#define STL(x) for(auto &HEHE:x) cout << HEHE << " "; cout << "\n";
 #define arr(x,y) loop(HEHE,0,y-1) cout << x[HEHE] << " "; cout << "\n";
 #define mid ((l + r) >> 1)
 using namespace std;
