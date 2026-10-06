@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #define int long long
-#define loop(i,a,b) for(int i=(a);i<=(b);i++)
 using namespace std;
 
 const int INF = 1e18;
@@ -17,18 +16,18 @@ signed main()
 
     int a, b, c;
 
-    loop(i, 1, m) {
+    for (int i = 1; i <= m; i++) {
         cin >> a >> b >> c;
         dis[a][b] = min(dis[a][b], c);
         dis[b][a] = min(dis[b][a], c);
     }
 
-    loop(i, 1, n)
+    for (int i = 1; i <= n; i++)
         dis[i][i] = 0;
 
-    loop(k, 1, n) {
-        loop(i, 1, n) {
-            loop(j, 1, n) {
+    for (int k = 1; k <= n; k++) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
                 dis[i][j] = min(dis[i][j], dis[i][k] + dis[k][j]);
             }
         }

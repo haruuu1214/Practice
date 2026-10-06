@@ -2,7 +2,6 @@
 #define int long long
 #define pii pair<int, int>
 #define piii pair<int, pii>
-#define loop(i, a, b) for (int i = (a); i <= (b); i++)
 using namespace std;
 
 vector<pii> G[200005];
@@ -16,7 +15,7 @@ signed main() {
     int n, m, i;
     cin >> n >> m;
     int a, b, c;
-    loop(i, 1, m) {
+    for (int i = 1; i <= m; i++) {
         cin >> a >> b >> c;
         G[a].push_back({b, c});
     }

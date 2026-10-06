@@ -3,13 +3,12 @@
 #define pii pair<int,int>
 #define F first
 #define S second
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define loop(i,a,b) for(int i=a;i<=b;i++)
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 signed main()
 {
-    IOS
+    IO;
 
     int n, m;
     cin >> n >> m;
@@ -19,7 +18,7 @@ signed main()
 
     int id = 0;
 
-    loop(i, 1, n) {
+    for (int i = 1; i <= n; i++) {
         cin >> x;
         while (id < x)
             station.push_back(++id);

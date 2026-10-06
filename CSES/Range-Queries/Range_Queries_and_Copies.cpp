@@ -3,9 +3,7 @@
 #define pii pair<int,int>
 #define F first
 #define S second
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define loop(i,a,b) for(int i=(a);i<=(b);i++)
-#define arr(x,y) loop(HEHE,0,y-1) cout << x[HEHE] << " "; cout << "\n";
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 #define mid ((l + r) >> 1)
 using namespace std;
 template<class T, class ...U>
@@ -62,13 +60,13 @@ int query(info *node, int l, int r, int ql, int qr)
 
 signed main()
 {
-    IOS
+    IO;
 
     int n, q, tmp;
     cin >> n >> q;
 
     vector <int> v;
-    loop(i, 1, n) {
+    for (int i = 1; i <= n; i++) {
         cin >> tmp;
         v.push_back(tmp);
     }

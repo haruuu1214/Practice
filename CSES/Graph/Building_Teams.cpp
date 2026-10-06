@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #define int long long
-#define loop(i, a, b) for (int i = (a); i <= (b); i++)
 using namespace std;
 
 vector<int> G[100005];
@@ -13,13 +12,13 @@ signed main() {
     int n, m, a, b;
     cin >> n >> m;
 
-    loop(i, 1, m) {
+    for (int i = 1; i <= m; i++) {
         cin >> a >> b;
         G[a].push_back(b);
         G[b].push_back(a);
     }
 
-    loop(i, 1, n) {
+    for (int i = 1; i <= n; i++) {
         if (vis[i])
             continue;
 
@@ -47,9 +46,9 @@ signed main() {
         }
     }
 
-    loop(i, 1, n)
-            cout
-        << (int)color[i] + 1 << " ";
+    for (int i = 1; i <= n; i++) {
+        cout << (int)color[i] + 1 << " ";
+    }
     cout << "\n";
     return 0;
 }

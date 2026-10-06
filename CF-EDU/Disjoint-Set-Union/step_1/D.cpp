@@ -3,9 +3,8 @@
 #define pii pair<int,int>
 #define F first
 #define S second
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 #define sz(x) (int)(x).size()
-#define loop(i,a,b) for(int i=(a);i<=(b);i++)
 using namespace std;
 
 struct DSU
@@ -48,13 +47,13 @@ void solve()
 
 signed main()
 {
-    IOS
+    IO;
     
     int n, m, q;
     cin >> n >> m >> q;
     int a, b;
     DSU dsu(n);
-    loop(i, 1, m)
+    for (int i = 1; i <= m; i++)
         cin >> a >> b;
     
     string s;

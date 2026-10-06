@@ -1,6 +1,6 @@
 #pragma GCC optimize("Ofast,unroll-loops,O3")
 #include <bits/stdc++.h>
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 const int INF = 1e9;
@@ -10,7 +10,7 @@ int dp[18][1 << 18];
 
 signed main()
 {
-    IOS
+    IO;
     
     int n;
     cin >> n;

@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #define int long long
-#define loop(i, a, b) for (int i = (a); i <= (b); i++)
 using namespace std;
 
 vector<int> G[100005];
@@ -12,14 +11,14 @@ signed main() {
     cin.tie(0);
     int n, m, a, b;
     cin >> n >> m;
-    loop(i, 1, m) {
+    for (int i = 1; i <= m; i++) {
         cin >> a >> b;
         G[a].push_back(b);
         in[b]++;
     }
 
     queue<int> q;
-    loop(i, 1, n) {
+    for (int i = 1; i <= n; i++) {
         if (in[i] == 0)
             q.push(i);
     }

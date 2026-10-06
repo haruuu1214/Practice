@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #define int long long
-#define loop(i, a, b) for (int i = (a); i <= (b); i++)
 using namespace std;
 
 char input[1005][1005];
@@ -36,11 +35,11 @@ signed main() {
 
     cin >> n >> m;
 
-    loop(i, 1, n) loop(j, 1, m) cin >> input[i][j];
+    for (int i = 1; i <= n; i++) for (int j = 1; j <= m; j++) cin >> input[i][j];
 
     int room = 0;
-    loop(i, 1, n) {
-        loop(j, 1, m) {
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= m; j++) {
             if (vis[i][j])
                 continue;
             if (input[i][j] == '.') {

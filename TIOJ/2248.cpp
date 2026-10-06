@@ -3,8 +3,7 @@
 #define pii pair<int,int>
 #define F first
 #define S second
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define loop(i,a,b) for(int i=a; i<=b; i++)
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 int a[100005];
@@ -30,15 +29,15 @@ int dfs(int v, int p)
 
 signed main()
 {
-    IOS
+    IO;
 
     int n;
     cin >> n >> k;
-    loop(i, 1, n)
+    for (int i = 1; i <= n; i++)
         cin >> a[i];
     
     int a, b, c;
-    loop(i, 1, n - 1) {
+    for (int i = 1; i <= n - 1; i++) {
         cin >> a >> b >> c;
         G[a].push_back({b, c});
         G[b].push_back({a, c});

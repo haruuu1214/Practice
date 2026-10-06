@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #define pii pair<int,int>
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 const int INF = 1e7;
@@ -94,7 +94,7 @@ vector <pii> ans;
 
 signed main()
 {
-    IOS
+    IO;
     int n, m;
     cin >> n >> m;
     int a, b, c, d;

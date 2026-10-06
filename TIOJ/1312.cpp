@@ -3,8 +3,7 @@
 #define pii pair<int,int>
 #define F first
 #define S second
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define loop(i,a,b) for(int i=(a);i<=(b);i++)
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 template<class T, class ...U>
 
@@ -50,7 +49,7 @@ struct DSU
 
 signed main()
 {
-    IOS
+    IO;
     
     int n, m;
 
@@ -58,7 +57,7 @@ signed main()
         DSU D(n);
 
         int a, b;
-        loop(i, 1, m) {
+        for (int i = 1; i <= m; i++) {
             cin >> a >> b;
             D.merge(a, b);
         }

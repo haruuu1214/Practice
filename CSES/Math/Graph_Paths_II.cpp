@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int, int>
-#define IOS                  \
+#define IO;                  \
     ios::sync_with_stdio(0); \
     cin.tie(0);
 #define matrix array<array<int, 110>, 110>
@@ -37,7 +37,7 @@ matrix mul(int N, matrix A, matrix B)
 
 signed main()
 {
-    IOS
+    IO;
 
         int n,
         m, k;

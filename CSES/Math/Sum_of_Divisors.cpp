@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #define int long long
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 const int mod = 1e9 + 7;
 const int two_inv = 500000004;

@@ -3,8 +3,7 @@
 #define pii pair<int,int>
 #define F first
 #define S second
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define loop(i,a,b) for(int i=(a);i<=(b);i++)
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 int n;
@@ -49,7 +48,7 @@ signed main()
     int q;
     cin >> n >> q;
 
-    loop(i, 1, n) {
+    for (int i = 1; i <= n; i++) {
         dsu[i] = i;
         sz[i] = i;
         pts[i] = 0;

@@ -2,7 +2,6 @@
 #define int long long
 #define pii pair<int, int>
 #define IO ios::sync_with_stdio(0), cin.tie(0)
-#define loop(i, a, b) for (int i = (a); i <= (b); i++)
 using namespace std;
 
 int amount;
@@ -45,7 +44,7 @@ struct DSU {
     }
     int mx_sz() {
         int res = -1;
-        loop(i, 1, N)
+        for (int i = 1; i <= N; i++)
             res = max(res, sz[i]);
         return res;
     }
@@ -61,7 +60,7 @@ signed main() {
         DSU D(n);
         int x;
         amount = n;
-        loop(i, 1, n) {
+        for (int i = 1; i <= n; i++) {
             cin >> x;
             if (D.merge(i, x)) {
                 amount--;

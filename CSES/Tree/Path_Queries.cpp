@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #define int long long
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 struct BIT
@@ -37,7 +37,7 @@ void dfs(int v, int p)
 
 signed main()
 {
-    IOS
+    IO;
     int n, q;
     cin >> n >> q;
     

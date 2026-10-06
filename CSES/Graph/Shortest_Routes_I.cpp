@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #define int long long
-#define loop(i,a,b) for(int i=(a);i<=(b);i++)
 #define pii pair<int,int>
 using namespace std;
 vector <pii> G[100005];
@@ -12,7 +11,7 @@ signed main()
     cin.tie(0);
     int n, m, a, b, c;
     cin >> n >> m;
-    loop(i, 1, m) {
+    for (int i = 1; i <= m; i++) {
         cin >> a >> b >> c;;
         G[a].push_back({b, c});
     }
@@ -35,7 +34,7 @@ signed main()
         }
     }
 
-    loop(i, 1, n) cout << dis[i] << " ";
+    for (int i = 1; i <= n; i++) cout << dis[i] << " ";
     cout << "\n";
     return 0;
 }

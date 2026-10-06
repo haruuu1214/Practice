@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 const int N = 10000005;
@@ -32,7 +32,7 @@ void solve()
 
 signed main()
 {
-    IOS
+    IO;
     init();
     int t = 1;
     cin >> t;

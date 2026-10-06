@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 #define int long long
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
  
 double dp[105][605];
  
 signed main() {
-    IOS
+    IO;
     
     int n, a, b;
  

@@ -3,7 +3,7 @@
 #define pii pair<int,int>
 #define F first
 #define S second
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 #define FOR0(i,n) for(int i=0;i<n;i++)
 #define FOR(i,n) for(int i=1;i<=n;i++)
 using namespace std;
@@ -12,7 +12,7 @@ int dp[10005];
 
 signed main()
 {
-    IOS
+    IO;
 
     int n, m, k, w, v;
 

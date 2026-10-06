@@ -3,7 +3,7 @@
 #define ll long long
 #define pll pair<ll,ll>
 #define pii pair<int,int>
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 const ll INF = 1e18;
@@ -22,7 +22,7 @@ bitset <32000> not_prime;
 
 signed main()
 {
-    IOS
+    IO;
     
     for (int i = 2; i < MXN; i++) {
         if (!not_prime[i])

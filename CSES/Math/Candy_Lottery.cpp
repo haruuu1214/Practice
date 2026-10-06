@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 #define int long long
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 double power[105];
 
 signed main()
 {
-    IOS
+    IO;
     
     int n, k;
     cin >> n >> k;

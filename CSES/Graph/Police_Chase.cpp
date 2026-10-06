@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int,int>
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define loop(i,a,b) for(int i=(a);i<=(b);i++)
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 const int N = 5005;
@@ -21,7 +20,7 @@ bool vis[N];
 
 signed main()
 {
-    IOS 
+    IO; 
     int n, m;
     cin >> n >> m;
 

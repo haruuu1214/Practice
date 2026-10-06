@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int,int>
-#define loop(i,a,b) for(int i=(a);i<=(b);i++)
 using namespace std;
 
 bool mp[1005][1005];
@@ -56,8 +55,8 @@ signed main()
     cin >> n >> m;
     queue <pii> M;
     queue <pii> A;
-    loop(i, 1, n) {
-        loop(j, 1, m) {
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= m; j++) {
             cin >> ch;
             if (ch == '#')
                 mp[i][j] = 0;
@@ -87,7 +86,7 @@ signed main()
             pii tmp = M.front();
             x = tmp.first, y = tmp.second;
             M.pop();
-            loop(i, 1, 4) {
+            for (int i = 1; i <= 4; i++) {
                 int nxtx = x + mvx[i], nxty = y + mvy[i];
                 if (inside(nxtx, nxty) && !visM[nxtx][nxty] && mp[nxtx][nxty]) {
                     M.push({nxtx, nxty});
@@ -101,7 +100,7 @@ signed main()
             pii tmp = A.front();
             x = tmp.first, y = tmp.second;
             A.pop();
-            loop(i, 1, 4) {
+            for (int i = 1; i <= 4; i++) {
                 int nxtx = x + mvx[i], nxty = y + mvy[i];
                 if (inside(nxtx, nxty) && !visM[nxtx][nxty] && !visA[nxtx][nxty] && mp[nxtx][nxty]) {
                     A.push({nxtx, nxty});

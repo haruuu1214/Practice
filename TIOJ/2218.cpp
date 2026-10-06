@@ -3,8 +3,7 @@
 #define pii pair<int,int>
 #define F first
 #define S second
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define loop(i,a,b) for(int i=a;i<=b;i++)
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 void space() {cout << "\n";}
 
@@ -14,21 +13,21 @@ int dp[505][505];
 
 signed main()
 {
-    IOS
+    IO;
 
     int n;
     cin >> n;
 
-    loop(i, 1, n) cin >> a[i];
+    for (int i = 1; i <= n; i++) cin >> a[i];
 
-    loop(i, 1, n) {
-        loop(j, i+1, n) {
+    for (int i = 1; i <= n; i++) {
+        for (int j = i + 1; j <= n; j++) {
             G[i][j] = __gcd(a[i], a[j]);
         }
     }
 
     fill(&dp[0][0], &dp[0][0] + 505 * 505, -1e18);
-    loop(i, 1, n+1) dp[i][i-1] = 0;
+    for (int i = 1; i <= n + 1; i++) dp[i][i-1] = 0;
 
     for (int l=n; l>=1; l--) {
         for (int r=l+1; r<=n; r++) {

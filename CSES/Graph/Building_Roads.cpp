@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #define int long long
-#define loop(i, a, b) for (int i = (a); i <= (b); i++)
 using namespace std;
 
 vector<int> G[100005];
@@ -23,14 +22,14 @@ signed main() {
     int n, m;
     cin >> n >> m;
     int a, b;
-    loop(i, 1, m) {
+    for (int i = 1; i <= m; i++) {
         cin >> a >> b;
         G[a].push_back(b);
         G[b].push_back(a);
     }
     int cnt = 0;
     vector<int> block;
-    loop(i, 1, n) {
+    for (int i = 1; i <= n; i++) {
         if (!vis[i]) {
             dfs(i, -1);
             block.push_back(i);

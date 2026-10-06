@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int,int>
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 const int p = 1e6 + 3;
@@ -39,7 +39,7 @@ int query(int l, int r) {
 }
 
 signed main() {
-    IOS
+    IO;
     
     string input;
     cin >> input;

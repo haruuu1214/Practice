@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #define int long long
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 int a[200005];
@@ -9,7 +9,7 @@ int from[200005];
 
 signed main()
 {
-    IOS
+    IO;
     
     int n;
     cin >> n;

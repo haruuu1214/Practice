@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 #define int long long
 #define pii pair<int,int>
-#define IOS ios::sync_with_stdio(0); cin.tie(0);
-#define loop(i,a,b) for(int i=(a);i<=(b);i++)
+#define IO ios::sync_with_stdio(0), cin.tie(0)
 using namespace std;
 
 int mvx[8] = {2, 2, 1, 1, -1, -1, -2, -2};
@@ -50,7 +49,7 @@ bool dfs(int step, int x, int y)
 
 signed main()
 {
-    IOS
+    IO;
     
     int x, y;
     cin >> x >> y;
